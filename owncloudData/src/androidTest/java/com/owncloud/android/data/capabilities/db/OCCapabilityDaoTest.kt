@@ -65,7 +65,7 @@ class OCCapabilityDaoTest {
         val capability = ocCapabilityDao.getCapabilitiesForAccount(user2)
         val capabilityAsLiveData = ocCapabilityDao.getCapabilitiesForAccountAsLiveData(user2).getLastEmittedValue()
 
-        assertNotNull(capability)
+        assertNull(capability)
         assertNotNull(capabilityAsLiveData)
         assertEquals(entityList[1], capability)
         assertEquals(entityList[1], capabilityAsLiveData)
