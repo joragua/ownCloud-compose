@@ -34,7 +34,7 @@ jobs:
           target: google_apis
           arch: x86_64
           profile: pixel
-          avd-name: test-avd
+          avd-name: instrumented-tests-avd
           force-avd-creation: true
           disable-animations: true
           emulator-options: -no-window -no-audio -no-boot-anim -accel auto -memory 2048
